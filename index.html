@@ -1,78 +1,383 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>YouTube.com Clone</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<head>
+  <title>YouTube.com Clone</title>
 
-    <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/video.css">
-    <link rel="stylesheet" href="styles/sidebar.css">
-  </head>
-  <body>
-    <header class="header">
-      <div class="left-section">
-        <img class="hamburger-menu" src="images/hamburger-menu.svg">
-        <img class="youtube-logo" src="images/youtube-logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/video.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="left-section">
+      <img class="hamburger-menu" src="images/hamburger-menu.svg">
+      <img class="youtube-logo" src="images/youtube-logo.svg">
+    </div>
+    <div class="middle-section">
+      <input class="search-bar" type="text" placeholder="Search">
+      <button class="search-button">
+        <img class="search-icon" src="images/search.svg">
+        <div class="tooltip">Search</div>
+      </button>
+      <!-- Put position absolute inside position relative -->
+      <button class="voice-search-button">
+        <img class="voice-search-icon" src="images/voice-search-icon.svg">
+        <div class="tooltip">Search with your voice</div>
+      </button>
+    </div>
+    <div class="right-section">
+      <div class="upload-icon-container">
+        <img class="upload-icon" src="images/upload.svg">
+        <div class="tooltip">Create</div>
       </div>
-      <div class="middle-section">
-        <input class="search-bar" type="text" placeholder="Search">
-        <button class="search-button">
-          <img class="search-icon" src="images/search.svg">
-          <div class="tooltip">Search</div>
-        </button>
-        <!-- Put position absolute inside position relative -->
-        <button class="voice-search-button">
-          <img class="voice-search-icon" src="images/voice-search-icon.svg">
-          <div class="tooltip">Search with your voice</div>
-        </button>
+      <img class="youtube-apps-icon" src="images/youtube-apps.svg">
+      <div class="notifications-icon-container">
+        <img class="notifications-icon" src="images/notifications.svg">
+        <div class="notifications-count">3</div>
       </div>
-      <div class="right-section">
-        <div class="upload-icon-container">
-          <img class="upload-icon" src="images/upload.svg">
-          <div class="tooltip">Create</div>
+      <!-- <img class="current-user-picture" src="channel-pictures/my-channel.jpeg"> -->
+    </div>
+  </header>
+
+  <nav class="sidebar">
+    <div class="sidebar-link">
+      <img src="images/home.svg">
+      <div>Home</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="images/explore.svg">
+      <div>Explore</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="images/subscriptions.svg">
+      <div>Subscriptions</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="images/originals.svg">
+      <div>Originals</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="images/youtube-music.svg">
+      <div>YouTube Music</div>
+    </div>
+    <div class="sidebar-link">
+      <img src="images/library.svg">
+      <div>Library</div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="video-grid">
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=qvfdtJSpoy8">
+            <img class="thumbnail" src="images/thumbnails/video1.webp">
+          </a>
+          <div class="video-time">1:46</div>
         </div>
-        <img class="youtube-apps-icon" src="images/youtube-apps.svg">
-        <div class="notifications-icon-container">
-          <img class="notifications-icon" src="images/notifications.svg">
-          <div class="notifications-count">3</div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="images/channel-profile/video1.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Tsukihime 月姫 -A piece of blue glass moon- Theme - 生命線 / seimeisen | [Piano Cover] (Synthesia)「ピアノ」
+            </p>
+            <p class="video-author">
+              Destly
+            </p>
+            <p class="video-stats">
+              194K views &#183; 2 year ago
+            </p>
+          </div>
         </div>
-        <!-- <img class="current-user-picture" src="channel-pictures/my-channel.jpeg"> -->
       </div>
-    </header>
 
-    <nav class="sidebar">
-      <div class="sidebar-link">
-        <img src="images/home.svg">
-        <div>Home</div>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=kyBqq_Ibdvg">
+            <img class="thumbnail" src="images/thumbnails/video3.webp">
+          </a>
+          <div class="video-time">7:02</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="images/channel-profile/video3.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Weight of the World - NieR: Automata ED [Piano]
+            </p>
+            <p class="video-author">
+              Animenz
+            </p>
+            <p class="video-stats">
+              2,338,889 views &#183; May 11, 2018
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="sidebar-link">
-        <img src="images/explore.svg">
-        <div>Explore</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="images/subscriptions.svg">
-        <div>Subscriptions</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="images/originals.svg">
-        <div>Originals</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="images/youtube-music.svg">
-        <div>YouTube Music</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="images/library.svg">
-        <div>Library</div>
-      </div>
-    </nav>
 
-    <main>
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=qvfdtJSpoy8">
+            <img class="thumbnail" src="images/thumbnails/video4.webp">
+          </a>
+          <div class="video-time">8:42</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="images/channel-profile/video4.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              a day in the life of an engineer working from home
+            </p>
+            <p class="video-author">
+              Joma Tech
+            </p>
+            <p class="video-stats">
+              18M views &#183; 2 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=p3MivL4Fyk8">
+            <img class="thumbnail" src="images/thumbnails/video2.webp">
+          </a>
+          <div class="video-time">5:21</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="images/channel-profile/video2.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Splinter Wolf
+            </p>
+            <p class="video-author">
+              KOHTA YAMAMOTO
+            </p>
+            <p class="video-stats">
+              2,961,428 views &#183; Jun 22, 2021
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=lg5wznn3IBE">
+            <img class="thumbnail" src="images/thumbnails/video5.webp">
+          </a>
+          <div class="video-time">23:14</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="images/channel-profile/video5.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Backyard Squirrelympics 3.0- The Summer Games
+            </p>
+            <p class="video-author">
+              Mark Rober
+            </p>
+            <p class="video-stats">
+              2,961,428 views &#183; 8 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=YgCq0Y6Mhh0">
+            <img class="thumbnail" src="images/thumbnails/video6.webp">
+          </a>
+          <div class="video-time">2:16</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="images/channel-profile/video6.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              C++ Coders Be Like...
+            </p>
+            <p class="video-author">
+              Mr. P Solver
+            </p>
+            <p class="video-stats">
+              249K views &#183; 3 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=1fPWr0d5zBE&t=339s">
+            <img class="thumbnail" src="images/thumbnails/video7.webp">
+          </a>
+          <div class="video-time">13:28</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="images/channel-profile/video4.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              10 years of coding in 13 minutes
+            </p>
+            <p class="video-author">
+              Joma Tech
+            </p>
+            <p class="video-stats">
+              4.3M views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=nmKTlmByng0">
+            <img class="thumbnail" src="images/thumbnails/video9.webp">
+          </a>
+          <div class="video-time">3:25</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="images/channel-profile/video9.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              TO THE MOON - hooligan. (Official Lyric Video)
+            </p>
+            <p class="video-author">
+              hooligan.offcial
+            </p>
+            <p class="video-stats">
+              29M views &#183; 3 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=0e3GPea1Tyg">
+            <img class="thumbnail" src="images/thumbnails/video10.webp">
+          </a>
+          <div class="video-time">25:41</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="images/channel-profile/video10.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              $456,000 Squid Game In Real Life!
+            </p>
+            <p class="video-author">
+              MrBeast
+            </p>
+            <p class="video-stats">
+              462M views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=8roB4h4tDFo">
+            <img class="thumbnail" src="images/thumbnails/video8.webp">
+          </a>
+          <div class="video-time">12:35</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="images/channel-profile/video8.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              1 Second from Every Episode of Naruto
+            </p>
+            <p class="video-author">
+              Crunchyroll Collection
+            </p>
+            <p class="video-stats">
+              3.1M views &#183; 9 months ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=4tz1zVTDrPw&t=3s">
+            <img class="thumbnail" src="images/thumbnails/video2.webp">
+          </a>
+          <div class="video-time">2:24</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="images/channel-profile/video11.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              Fighting anime edit
+            </p>
+            <p class="video-author">
+              SalOP
+            </p>
+            <p class="video-stats">
+              42K views &#183; 3 years ago
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-preview">
+        <div class="thumbnail-row">
+          <a href="https://www.youtube.com/watch?v=a-thH9a9_XE&t=349s">
+            <img class="thumbnail" src="images/thumbnails/video12.webp">
+          </a>
+          <div class="video-time">5:21</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-picture">
+            <img class="profile-picture" src="images/channel-profile/video12.jpg">
+          </div>
+          <div class="video-info">
+            <p class="video-title">
+              How to Use LeetCode Effectively
+            </p>
+            <p class="video-author">
+              PIRATE KING
+            </p>
+            <p class="video-stats">
+              331K views &#183; 1 year ago
+            </p>
+          </div>
+        </div>
+      </div>
+
       
-    </main>
-  </body>
+    </section>
+  </main>
+</body>
+
 </html>
